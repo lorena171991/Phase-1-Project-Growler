@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openAgeWindow();
 
-    // UNDER 21 ROUTING
+    // UNDER 21 ROUTE TO YOUTUBE
     submitAgeWindow.addEventListener('click', function() {
         if (yesCheckbox.checked) {
             closeAgeWindow();
