@@ -23,7 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openAgeWindow();
 
-    
+    // UNDER 21 ROUTING
+    submitAgeWindow.addEventListener('click', function() {
+        if (yesCheckbox.checked) {
+            closeAgeWindow();
+        } else {
+            window.location.href = 'https://www.youtube.com/shorts/w9wAzUM-AqQ';
+        }
+    });
 
 
 })
