@@ -100,4 +100,35 @@ document.addEventListener("DOMContentLoaded", function () {
         apiDataContainer.innerHTML = '';
     }
 
+    // WHAT'S DISPLAYED ON BREWERY CARD
+    function createBreweryCard(brewery) {
+        const card = document.createElement('div');
+        card.classList('brewery-card');
+
+        // NAME
+        const nameElement = document.createElement('h3');
+        nameElement.classList.add('brewery-name');
+        nameElement.textContent = brewery.name;
+
+        // TYPE
+        const typeElement = document.createElement('p');
+        typeElement.classList.add('brewery-type');
+        typeElement.textContent = `Type: ${brewery.brewery_type}`;
+
+        // STREET
+        const streetElement = document.createElement('p');
+        streetElement.classList.add('brewery-street');
+        streetElement.textContent = `Street: ${brewery.street || 'N/A'}`;
+
+        // PHONE NUMBER
+        const phoneElement = document.createElement('p');
+        phoneElement.classList.add('brewery-phone');
+        phoneElement.textContent = `Phone Number: ${brewery.brewery.phone}`;
+
+        // WEBSITE
+        const websiteElement = document.createElement('p');
+        websiteElement.classList.add('brewery-website');
+
+        
+    }
 })
