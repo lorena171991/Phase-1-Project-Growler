@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
-    // DISPLAYING DATA IN CARD
+    // DISPLAY DATA IN CARD
     function displayData(data) {
         apiDataContainer.innerHTML = '';
         if (data.length > 0) {
@@ -55,5 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
             apiDataContainer.appendChild(noDataMessage);
         }
     }
+
+    // FETCHING AND DISPLAY STATE DATA
+    function searchByState() {
+        const cityInput = document.getElementById('search-by-state').value;
+        const stateAPI = `https://api.openbrewerydb.org/v1/breweries?by_state=${stateInput}`;
+        
+        fetchData(stateAPI)
+            .then(data => {
+                console.log('API Response:', data);
+                displayData(data);
+            })
+    }   
 
 })
