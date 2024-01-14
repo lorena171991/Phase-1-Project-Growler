@@ -182,4 +182,22 @@ document.addEventListener("DOMContentLoaded", function () {
             searchByZipcode();
         }
     });
-})
+
+    // SEARCH BUTTON
+    if (searchButton) {
+        searchButton.addEventListener('click', function () {
+            searchByState();
+            searchByCity();
+            searchByZipcode();
+        });
+    } else {
+        console.error('Element with ID "searchButton" not found in the document.');
+    }
+
+    // RESET BUTTON
+    if (resetButton) {
+        resetButton.addEventListener('click', resetPage);
+    } else {
+        console.error('Element with ID "resetButton" not found in the document.');
+    }
+});
