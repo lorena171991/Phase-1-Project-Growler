@@ -56,12 +56,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // FETCHING AND DISPLAY STATE DATA
+    // FETCH AND DISPLAY STATE DATA
     function searchByState() {
-        const cityInput = document.getElementById('search-by-state').value;
+        const stateInput = document.getElementById('search-by-state').value;
         const stateAPI = `https://api.openbrewerydb.org/v1/breweries?by_state=${stateInput}`;
         
         fetchData(stateAPI)
+            .then(data => {
+                console.log('API Response:', data);
+                displayData(data);
+            })
+    }
+    
+    // FETCH AND DISPLAY CITY DATA
+    function searchByCity() {
+        const cityInput = document.getElementById('search-by-city').value;
+        const cityAPI = `https://api.openbrewerydb.org/v1/breweries?by_city=${cityInput}`;
+        
+        fetchData(cityAPI)
             .then(data => {
                 console.log('API Response:', data);
                 displayData(data);
