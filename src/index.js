@@ -129,6 +129,40 @@ document.addEventListener("DOMContentLoaded", function () {
         const websiteElement = document.createElement('p');
         websiteElement.classList.add('brewery-website');
 
-        
+        if (brewery.website_url) {
+            const websiteText = document.createTextNode('Website: ');
+            const websiteLink = document.createElement('a');
+            websiteLink.href = brewery.website_url;
+            websiteLink.target = '_blank';
+            websiteLink.textContent = brewery.website_url;
+
+            websiteElement.appendChild(websiteText);
+            websiteElement.appendChild(websiteLink);
+        } else {
+            websiteElement.textContent = 'Website: N/A';
+        }
+
+        // MAPS
+        const mapLink = document.createElement('a');
+        const latitude = brewery.latitude;
+        const longitude = brewery.longitude;
+        if (latitude && longitude) {
+            mapLink.href = `https://www.google.com/maps/place/${latitude},${longitude}`;
+            mapLink.target = '_blank';
+            mapLink.textContent = 'See Location on Google Maps';
+        } else {
+            mapLink.textContent = 'Location Not Available';
+        }
+
+        card.appendChild(nameElement);
+        card.appendChild(streetElement);
+        card.appendChild(phoneElement);
+        card.appendChild(websiteElement);
+        card.appendChild(mapElement);
+        card.appendChild(typeElement);
+
+        return card;
     }
+
+    
 })
