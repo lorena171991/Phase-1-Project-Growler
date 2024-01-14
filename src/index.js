@@ -78,6 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log('API Response:', data);
                 displayData(data);
             })
-    }   
+    }
+    
+    // FETCH AND DISPLAY ZIPCODE DATA
+    function searchByZipcode() {
+        const zipcodeInput = document.getElementById('search-by-zipcode').value;
+        const zipcodeAPI = `https://api.openbrewerydb.org/v1/breweries?by_postal=${zipcodeInput}`;
+        
+        fetchData(zipcodeAPI)
+            .then(data => {
+                console.log('API Response:', data);
+                displayData(data);
+            })
+    }
 
 })
