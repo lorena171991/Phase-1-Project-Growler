@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openAgeWindow();
 
-    // UNDER 21 ROUTE TO YOUTUBE
+    // AGE CONFIRMATION
     submitAgeWindow.addEventListener('click', function() {
         if (yesCheckbox.checked) {
             closeAgeWindow();
@@ -32,5 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // FETCHING API DATA
+    function fetchData(apiUrl) {
+        return fetch(apiUrl)
+            .then(resp => resp.json())
+            .catch(error => {
+                console.error('Error fetching API date:', error)
+            });
+    }
+
+    // DISPLAYING DATA IN CARD
+    function displayData(data) {
+        apiDataContainer.innerHTML = '';
+        if (data.length > 0) {
+            data.forEach(item => {
+                const card = createBreweryCard(item);
+                apiDataContainer.appendChild(card);
+            });
+        } else {
+            const noDataMessage = document.createElement('p');
+            noDataMessage.textContent = 'No Data Found';
+            apiDataContainer.appendChild(noDataMessage);
+        }
+    }
 
 })
