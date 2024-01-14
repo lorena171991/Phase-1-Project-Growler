@@ -92,4 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
             })
     }
 
+    // RESET PAGE
+    function resetPage() {
+        document.getElementById('search-by-state').value = '';
+        document.getElementById('search-by-city').value = '';
+        document.getElementById('search-by-zipcode').value = '';
+        apiDataContainer.innerHTML = '';
+    }
+
 })
