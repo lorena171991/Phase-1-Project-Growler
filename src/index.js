@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // WHAT'S DISPLAYED ON BREWERY CARD
     function createBreweryCard(brewery) {
         const card = document.createElement('div');
-        card.classList('brewery-card');
+        card.classList.add('brewery-card');
 
         // NAME
         const nameElement = document.createElement('h3');
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // PHONE NUMBER
         const phoneElement = document.createElement('p');
         phoneElement.classList.add('brewery-phone');
-        phoneElement.textContent = `Phone Number: ${brewery.brewery.phone}`;
+        phoneElement.textContent = `Phone Number: ${brewery.phone}`;
 
         // WEBSITE
         const websiteElement = document.createElement('p');
@@ -158,11 +158,28 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(streetElement);
         card.appendChild(phoneElement);
         card.appendChild(websiteElement);
-        card.appendChild(mapElement);
+        card.appendChild(mapLink);
         card.appendChild(typeElement);
 
         return card;
     }
 
-    
+    // ENTER KEYS
+    document.getElementById('search-by-state').addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            searchByState();
+        }
+    })
+
+    document.getElementById('search-by-city').addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            searchByCity();
+        }
+    });
+
+    document.getElementById('search-by-zipcode').addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            searchByZipcode();
+        }
+    });
 })
