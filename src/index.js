@@ -194,10 +194,31 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error('Element with ID "searchButton" not found in the document.');
     }
 
+    document.getElementById('searchButton').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'white';
+        this.style.color = 'black';
+    })
+
+    document.getElementById('searchButton').addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'black';
+        this.style.color = 'white';
+    })
+
     // RESET BUTTON
     if (resetButton) {
         resetButton.addEventListener('click', resetPage);
     } else {
         console.error('Element with ID "resetButton" not found in the document.');
     }
+
+    document.getElementById('resetButton').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'white';
+        this.style.color = 'black';
+    })
+
+    document.getElementById('resetButton').addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'black';
+        this.style.color = 'white';
+    })
+
 });
