@@ -44,3 +44,53 @@ body {
     font: 700 25px/39px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-align: center;
 }
+
+.input-container {
+    font: 20px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input {
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+#spaceContainer {
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.credit {
+    font: 2px;
+    padding-bottom: 5px;
+}
+
+#search-title h4 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#apiContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin-bottom: 2px;
+}
+
+.brewery-card {
+    margin-bottom: 100px;
+}
+
+.brewery-name {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
