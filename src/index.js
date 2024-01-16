@@ -23,13 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openAgeWindow();
 
-    // AGE CONFIRMATION
-    submitAgeWindow.addEventListener('click', function() {
-        if (yesCheckbox.checked) {
-            closeAgeWindow();
-        } else {
-            window.location.href = 'https://www.youtube.com/shorts/w9wAzUM-AqQ';
-        }
+    // YES AGE CONFIRMATION
+    document.getElementById('yesButton').addEventListener('click', function() {
+        closeAgeWindow();
+    });
+
+    // NO AGE CONFIRMATION
+    document.getElementById('noButton').addEventListener('click', function() {
+        window.location.href = 'https://www.youtube.com/shorts/w9wAzUM-AqQ';
     });
 
     // FETCHING API DATA
@@ -221,4 +222,24 @@ document.addEventListener("DOMContentLoaded", function () {
         this.style.color = 'white';
     })
 
+    // AGE WINDOW SUBMIT BUTTON
+    document.getElementById('yesButton').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'white';
+        this.style.color = 'black';
+    })
+
+    document.getElementById('yesButton').addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'black';
+        this.style.color = 'white';
+    })
+
+    document.getElementById('noButton').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'white';
+        this.style.color = 'black';
+    })
+
+    document.getElementById('noButton').addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'black';
+        this.style.color = 'white';
+    })
 });
