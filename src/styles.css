@@ -9,6 +9,8 @@
     padding: 200px;
     text-align: center;
     margin: 0 auto;
+    z-index: 50;
+    border-radius: 5px;
 }
 
 #ageWindow h2, label, button {
@@ -36,20 +38,21 @@ body {
     font: 20px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#search, #reset {
-    font: 20px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#search-title {
-    font: 700 25px/39px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-}
-
 .input-container {
-    font: 20px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font: 18px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    position: relative;
+}
+
+.input-container label {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {
@@ -98,19 +101,27 @@ a {
 }
 
 #searchButton, #resetButton {
+    text-align: center;
+    font: 1 16px/39px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: black;
     color: white;
-    border: none;
-    padding: 0;
+    border: 1px solid white;
+    border-radius: 1px;
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    width: 180px;
+}
+
+#search-title {
+    font: 700 16px/39px 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 #searchButton {
-    margin-right: 12px;
+    margin-right: 5px;
 }
 
 #resetButton {
-    margin-left: 12px;
+    margin-left: 5px;
 }
