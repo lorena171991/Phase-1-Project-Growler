@@ -122,10 +122,12 @@ a {
 
 #searchButton {
     margin-right: 5px;
+    border-radius: 2px;
 }
 
 #resetButton {
     margin-left: 5px;
+    border-radius: 2px;
 }
 
 #yesButton, #noButton {
