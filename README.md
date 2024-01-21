@@ -10,7 +10,7 @@ Powered by [Open Brewery DB](https://www.openbrewerydb.org/) , Tjos is my first 
 
 ## Usage
 Once confiming your age, search using your State, City, or Zipcode.
-https://github.com/lorena171991/Phase-1-Project-Growler/assets/97490820/e6694da4-8c31-47af-a64f-a7ffa10e2a7c
+https://github.com/lorena171991/Phase-1-Project-Growler/assets/97490820/e6694da4-8c31-47af-a64f-a7ffa10e2a7c.mp4
 
 
 Click the link to be directed to their website.
