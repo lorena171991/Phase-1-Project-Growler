@@ -25,3 +25,6 @@ Click the link to be directed to their address using google maps!
 Reset if you want to search again.
 
 ![Reset](https://github.com/lorena171991/Phase-1-Project-Growler/assets/97490820/fee3651e-0526-48d0-9b62-ba4f9146b54a)
+
+## API Used
+[Open Brewery DB](https://www.openbrewerydb.org/)
