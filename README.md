@@ -1,7 +1,7 @@
 # GROWLER.
 
 ## Overview
-Powered by [Open Brewery DB](https://www.openbrewerydb.org/) , This is my first Phase 1 single page application project. **GROWLER.** is a useful option when you're feeling a bit thirsty and looking for breweries in you area!
+Powered by [Open Brewery DB](https://www.openbrewerydb.org/) , this is my first Phase 1 single page application project. **GROWLER.** is a useful option when you're feeling a bit thirsty and looking for breweries in you area!
 
 ## Built With
 - `HTML`
