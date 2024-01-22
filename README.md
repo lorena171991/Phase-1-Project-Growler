@@ -22,6 +22,6 @@ Click the link to be directed to their address using google maps!
 
 ![Maps](https://github.com/lorena171991/Phase-1-Project-Growler/assets/97490820/941beabd-5203-409a-96e9-867d2ccefd4f)
 
-Reset if you want to Search again.
+Reset if you want to search again.
 
 ![Reset](https://github.com/lorena171991/Phase-1-Project-Growler/assets/97490820/fee3651e-0526-48d0-9b62-ba4f9146b54a)
